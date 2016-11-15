@@ -1,6 +1,6 @@
 #include "mainwindow.hpp"
 
-#include <QLabel>
+
 
 
 MainWindow::MainWindow() //: QWidget()
@@ -30,7 +30,7 @@ MainWindow::MainWindow() //: QWidget()
     m_box->PrintBox(m_layout, "RenderTarget");
 
 
-    mainlayout->addLayout(m_layout, 2000, 200);
+    mainlayout->addLayout(m_layout, 0, 0);
     setCentralWidget(zoneCentrale);
 
 

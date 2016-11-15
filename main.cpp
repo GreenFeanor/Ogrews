@@ -1,8 +1,8 @@
 #include "mainwindow.hpp"
 #include <QApplication>
-#include <QtWidgets>
+#include <QWidget>
 #include <QLabel>
-#include <QtGUI>
+//#include <QtGUI>
 
 
 

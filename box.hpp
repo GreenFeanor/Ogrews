@@ -1,11 +1,11 @@
 #ifndef BOX_HPP
 #define BOX_HPP
 
-#include <QtWidgets>
+#include <QWidget>
 #include <QLabel>
-#include <QString.h>
+#include <QString>
 #include <QStringList>
-
+#include <QGridLayout>
 
 class Box
 {

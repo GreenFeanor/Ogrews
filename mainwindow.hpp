@@ -11,6 +11,9 @@
 #include <QSlider>
 #include <QLabel>
 #include <QMdiArea>
+#include <QMainWindow>
+#include <QLabel>
+#include <QGraphicsView>
 
 
 #include "box.hpp"

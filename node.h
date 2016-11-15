@@ -7,7 +7,7 @@ class Node
 {
 public:
     Node();
-    ~node();
+    ~Node();
 };
 
 #endif // NODE_H
