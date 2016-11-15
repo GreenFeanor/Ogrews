@@ -22,4 +22,5 @@ HEADERS  += \
     mainwindow.hpp \
     node.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    box.ui

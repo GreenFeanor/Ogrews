@@ -1,63 +1,66 @@
 #include "box.hpp"
 
-Box::Box()
+Box::Box(QWidget * parent) :
+    QWidget(parent)
 {
-     // DEFINI LES IMAGES
-    Downbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Down");
-    Upbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Up2.png");
-    Rightbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Right");
-    Leftbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Left");
-    LDownbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/LDown");
-    RDownbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/RDown");
-    RUpbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/RUp2");
-    LUpbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/LUp2");
-    Centerbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Center");
+    setupUi(this);
 
-    Connector_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/Connector.png");
+     // DEFINI LES IMAGES
+//    Downbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Down");
+//    Upbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Up2.png");
+//    Rightbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Right");
+//    Leftbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Left");
+//    LDownbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/LDown");
+//    RDownbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/RDown");
+//    RUpbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/RUp2");
+//    LUpbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/LUp2");
+//    Centerbox_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/box96px_splited/Center");
+
+//    Connector_img = new QPixmap("C:/Users/ProUser/Documents/Compositor_Editor/Connector.png");
 
 
 
 
     // CREATION DES LABELS
 
-    Downbox_    = new QLabel();
-    Upbox_      = new QLabel();
-    Rightbox_   = new QLabel();
-    Leftbox_    = new QLabel();
-    LDownbox_   = new QLabel();
-    RDownbox_   = new QLabel();
-    RUpbox_     = new QLabel();
-    LUpbox_     = new QLabel();
-    Centerbox_  = new QLabel();
+//    Downbox_    = new QLabel();
+//    Upbox_      = new QLabel();
+//    Rightbox_   = new QLabel();
+//    Leftbox_    = new QLabel();
+//    LDownbox_   = new QLabel();
+//    RDownbox_   = new QLabel();
+//    RUpbox_     = new QLabel();
+//    LUpbox_     = new QLabel();
+//    Centerbox_  = new QLabel();
 
-    Text_ = new QLabel();
+//    Text_ = new QLabel();
 
 
 
     // CHARGE IMAGE DANS LABEL
 
-    Downbox_->setPixmap(*Downbox_img);
-    Upbox_->setPixmap(*Upbox_img);
-    Rightbox_->setPixmap(*Rightbox_img);
-    Leftbox_->setPixmap(*Leftbox_img);
-    LDownbox_->setPixmap(*LDownbox_img);
-    RDownbox_->setPixmap(*RDownbox_img);
-    RUpbox_->setPixmap(*RUpbox_img);
-    LUpbox_->setPixmap(*LUpbox_img);
-    Centerbox_->setPixmap(*Centerbox_img);
+//    Downbox_->setPixmap(*Downbox_img);
+//    Upbox_->setPixmap(*Upbox_img);
+//    Rightbox_->setPixmap(*Rightbox_img);
+//    Leftbox_->setPixmap(*Leftbox_img);
+//    LDownbox_->setPixmap(*LDownbox_img);
+//    RDownbox_->setPixmap(*RDownbox_img);
+//    RUpbox_->setPixmap(*RUpbox_img);
+//    LUpbox_->setPixmap(*LUpbox_img);
+//    Centerbox_->setPixmap(*Centerbox_img);
 
 
     // RECUPERE LEUR LARGEUR/HAUTEUR
 
-    widthInitDown = Downbox_img->width(),      heightInitDown = Downbox_img->height();
-    widthInitUp = Upbox_img->width(),          heightInitUp = Upbox_img->height();
-    widthInitRight = Rightbox_img->width(),    heightInitRight = Rightbox_img->height();
-    widthInitLeft = Leftbox_img->width(),      heightInitLeft = Leftbox_img->height();
-    widthInitLDown = LDownbox_img->width(),    heightInitLDown = LDownbox_img->height();
-    widthInitRDown = RDownbox_img->width(),    heightInitRDown = RDownbox_img->height();
-    widthInitRUp = RUpbox_img->width(),        heightInitRUp = RUpbox_img->height();
-    widthInitLUp = LUpbox_img->width(),        heightInitLUp = LUpbox_img->height();
-    widthInitCenter = Centerbox_img->width(),  heightInitCenter = Centerbox_img->height();
+//    widthInitDown = Downbox_img->width(),      heightInitDown = Downbox_img->height();
+//    widthInitUp = Upbox_img->width(),          heightInitUp = Upbox_img->height();
+//    widthInitRight = Rightbox_img->width(),    heightInitRight = Rightbox_img->height();
+//    widthInitLeft = Leftbox_img->width(),      heightInitLeft = Leftbox_img->height();
+//    widthInitLDown = LDownbox_img->width(),    heightInitLDown = LDownbox_img->height();
+//    widthInitRDown = RDownbox_img->width(),    heightInitRDown = RDownbox_img->height();
+//    widthInitRUp = RUpbox_img->width(),        heightInitRUp = RUpbox_img->height();
+//    widthInitLUp = LUpbox_img->width(),        heightInitLUp = LUpbox_img->height();
+//    widthInitCenter = Centerbox_img->width(),  heightInitCenter = Centerbox_img->height();
 
 }
 
@@ -91,7 +94,7 @@ void Box::PrintBox(QGridLayout *layout, QString Titre)//, QWidget widget)
     const int FontSize = 9;
 
     Text_->setText(Titre);
-    Text_->setFont(QFont("Arial", 9, QFont::Bold, false ));
+    Text_->setFont(QFont("Arial", FontSize, QFont::Bold, false ));
     Text_->setAlignment(Qt::AlignCenter);
     Text_->setStyleSheet("color: #FFFFFF;");
     //Text_->setPalette(QPalette(QColor(0,255,255)));

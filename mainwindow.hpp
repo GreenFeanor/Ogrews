@@ -15,12 +15,13 @@
 #include <QLabel>
 #include <QGraphicsView>
 
+#include "ui_mainwindow.h"
 
 #include "box.hpp"
 
 
 
-class MainWindow : public QMainWindow
+class MainWindow : public QMainWindow, public Ui::MainWindow
 
 {
 
@@ -39,7 +40,7 @@ class MainWindow : public QMainWindow
 
 
     protected:
-    QGridLayout *mainlayout;
+//    QGridLayout *mainlayout;
     QGridLayout *m_layout, *m_layout2;
 
 

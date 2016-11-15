@@ -1,19 +1,21 @@
 #ifndef BOX_HPP
 #define BOX_HPP
 
+#include "ui_box.h"
+
 #include <QWidget>
 #include <QLabel>
 #include <QString>
 #include <QStringList>
 #include <QGridLayout>
 
-class Box
+class Box : public QWidget, public Ui::Box
 {
 
 
 
 public:
-    Box();
+    Box(QWidget * parent = 0);
     ~Box();
 
 
